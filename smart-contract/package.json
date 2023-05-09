@@ -1,7 +1,33 @@
 {
-  "name": "$name$",
-  "version": "$version$",
+  "name": "smart-contract",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "size": "npx hardhat size-contracts"
+  },
   "dependencies": {
-    $END$
+    "@matterlabs/hardhat-zksync-chai-matchers": "^0.1.2",
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
+    "@matterlabs/hardhat-zksync-solc": "^0.3.16",
+    "@matterlabs/hardhat-zksync-verify": "^0.1.5",
+    "@matterlabs/signature-checker": "^1.1.1",
+    "@matterlabs/zksync-contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "4.6.0",
+    "@openzeppelin/contracts-upgradeable": "4.6.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "zksync-web3": "^0.14.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "hardhat-contract-sizer": "^2.8.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
   }
 }
